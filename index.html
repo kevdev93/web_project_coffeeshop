@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Café Triple Expresso</title>
+    <link rel="icon" href="images/favicon_circles.ico" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Noto+Serif&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header
+      class="header"
+      style="background-image: url('images/background_header.svg')"
+    >
+      <div class="header__container">
+        <img
+          src="images/logo_coffeeshop_dark.svg"
+          alt="Logo"
+          class="header__logo"
+        />
+
+        <div class="header__content">
+          <div class="header__text">
+            <h1 class="header__title">
+              <span class="header__title--highlight">Café de especialidad</span
+              ><br />en Triple Peaks
+            </h1>
+            <p class="header__description">
+              ¡Te damos la bienvenida a nuestra zona de estudio! Aquí tenemos
+              café para darte energía y motivar tu creatividad.
+            </p>
+            <p class="header__schedule">
+              Horarios:<br />Lunes a Viernes (de 10:00h a 19:00h)<br />Sábados y
+              Domingos (de 11:00h a 18:00h)
+            </p>
+            <p class="header__address">
+              Avenida del Estilo 200, Ciudad Triple Peaks
+            </p>
+
+            <nav class="nav">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a href="#recipes" class="nav__link">Recetas</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#reservation" class="nav__link">Reservar una mesa</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#contact" class="nav__link">Contactos</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="header__image-container">
+            <img
+              src="images/inside_coffee_shop.png"
+              alt="Interior del café"
+              class="header__image"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section
+        id="recipes"
+        class="recipes"
+        style="background-image: url('images/background_recipes.svg')"
+      >
+        <div class="recipes__container">
+          <h2 class="recipes__title">Recetas</h2>
+          <p class="recipes__description">
+            Echa un vistazo a las recetas que hemos reunido para que elabores
+            tus propios snacks.
+          </p>
+          <div class="recipes__videos">
+            <div class="recipes__card">
+              <img
+                src="images/aeropress.jpg"
+                alt="Receta en Aeropress"
+                class="recipes__image"
+              />
+              <p class="recipes__text">
+                Receta en Aeropress<br /><small>~5 min</small>
+              </p>
+            </div>
+            <div class="recipes__card">
+              <img
+                src="images/frenchpress.jpg"
+                alt="Receta francesa"
+                class="recipes__image"
+              />
+              <p class="recipes__text">
+                Receta en cafetera francesa<br /><small>~15 min</small>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="reservation"
+        class="reservation"
+        style="background-image: url('images/background_reservation.svg')"
+      >
+        <div class="reservation__container">
+          <h2 class="reservation__title">Reservar una mesa</h2>
+          <form class="reservation__form">
+            <label class="reservation__label"
+              >Nombre *
+              <input type="text" required class="reservation__input" />
+            </label>
+            <label class="reservation__label"
+              >Número de comensales *
+              <select required class="reservation__input">
+                <option value="">1-8</option>
+              </select>
+            </label>
+            <label class="reservation__label"
+              >Fecha y hora *
+              <input type="date" required class="reservation__input" />
+            </label>
+            <label class="reservation__label"
+              >Tu correo electrónico *
+              <input type="email" required class="reservation__input" />
+            </label>
+            <button type="submit" class="reservation__button">
+              <img
+                src="images/check.svg"
+                alt="Check"
+                class="reservation__icon"
+              />
+              Reservar una mesa
+            </button>
+            <label class="reservation__terms">
+              <input type="checkbox" required />
+              Acepto los términos de uso
+            </label>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <img
+          src="images/logo_coffeeshop_light.svg"
+          alt="Logo claro"
+          class="footer__logo"
+        />
+        <p class="footer__copyright">© 2024 Tu nombre</p>
+        <div id="contact" class="footer__social">
+          <p class="footer__social-title">Redes sociales</p>
+          <ul class="footer__social-list">
+            <li>
+              <a href="#"
+                ><img src="images/facebook_white.svg" alt="Facebook" width="20"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="images/instagram_white.svg"
+                  alt="Instagram"
+                  width="20"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
