@@ -1,179 +1,201 @@
-<!DOCTYPE html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Café Triple Expresso</title>
-    <link rel="icon" href="images/favicon_circles.ico" />
-    <link rel="stylesheet" href="styles.css" />
+    <meta
+      name="description"
+      content="Café de especialidad en Triple Peaks: un espacio creativo para disfrutar y aprender."
+    />
+    <meta name="author" content="Kevin Escobar" />
+    <meta
+      name="keywords"
+      content="cafetería, café, Triple Peaks, especialidad, recetas, reserva"
+    />
+    <title>Café de especialidad en Triple Peaks</title>
+    <link rel="icon" href="./favicon_circles.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./vendor/normalize.css" />
+    <link rel="stylesheet" href="./pages/index.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter&family=Noto+Serif&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Noto+Serif&family=Playfair+Display:ital,wght@1,600&display=swap"
+      rel="stylesheet"
+    />
   </head>
+
   <body>
-    <header
-      class="header"
-      style="background-image: url('images/background_header.svg')"
-    >
-      <div class="header__container">
-        <img
-          src="images/logo_coffeeshop_dark.svg"
-          alt="Logo"
-          class="header__logo"
-        />
+    <div class="page">
+      <header class="header">
+        <nav class="nav">
+          <img
+            src="./images/logo_coffeeshop_dark.svg"
+            alt="Logotipo Triple Expresso"
+            class="nav__logo"
+          />
+          <ul class="nav__links">
+            <li><a class="nav__link" href="#recipes">Recetas</a></li>
+            <li>
+              <a class="nav__link" href="#reservation">Reservar una mesa</a>
+            </li>
+            <li><a class="nav__link" href="#footer">Contactos</a></li>
+          </ul>
+        </nav>
 
         <div class="header__content">
-          <div class="header__text">
-            <h1 class="header__title">
-              <span class="header__title--highlight">Café de especialidad</span
-              ><br />en Triple Peaks
-            </h1>
-            <p class="header__description">
-              ¡Te damos la bienvenida a nuestra zona de estudio! Aquí tenemos
-              café para darte energía y motivar tu creatividad.
-            </p>
-            <p class="header__schedule">
-              Horarios:<br />Lunes a Viernes (de 10:00h a 19:00h)<br />Sábados y
-              Domingos (de 11:00h a 18:00h)
-            </p>
-            <p class="header__address">
-              Avenida del Estilo 200, Ciudad Triple Peaks
-            </p>
-
-            <nav class="nav">
-              <ul class="nav__list">
-                <li class="nav__item">
-                  <a href="#recipes" class="nav__link">Recetas</a>
-                </li>
-                <li class="nav__item">
-                  <a href="#reservation" class="nav__link">Reservar una mesa</a>
-                </li>
-                <li class="nav__item">
-                  <a href="#contact" class="nav__link">Contactos</a>
-                </li>
-              </ul>
-            </nav>
+          <div class="header__column">
+            <div class="header__name">
+              <h1 class="header__title">
+                <span class="header__title_accent">Café de especialidad</span
+                ><br />
+                en Triple Peaks
+              </h1>
+              <p class="header__description">
+                ¡Te damos la bienvenida a nuestra zona de estudio! Aquí tenemos
+                café para darte energía y motivar tu creatividad.
+              </p>
+            </div>
+            <div class="header__schedule">
+              <p class="header__schedule-title">Horario:</p>
+              <p class="header__schedule-text">
+                Lunes a Viernes (de 10:00h a 19:00h)
+              </p>
+              <p class="header__schedule-text">
+                Sábados y Domingos (de 11:00h a 18:00h)
+              </p>
+            </div>
           </div>
 
-          <div class="header__image-container">
+          <div class="header__column">
             <img
-              src="images/inside_coffee_shop.png"
-              alt="Interior del café"
+              src="./images/inside_coffee_shop.png"
+              alt="Ilustración cafetería"
               class="header__image"
             />
+            <p class="header__address">
+              Avenida del Éxito 200, Ciudad Triple Peaks
+            </p>
           </div>
         </div>
-      </div>
-    </header>
+      </header>
 
-    <main class="main">
-      <section
-        id="recipes"
-        class="recipes"
-        style="background-image: url('images/background_recipes.svg')"
-      >
-        <div class="recipes__container">
+      <main class="content">
+        <section class="recipes" id="recipes">
           <h2 class="recipes__title">Recetas</h2>
           <p class="recipes__description">
-            Echa un vistazo a las recetas que hemos reunido para que elabores
-            tus propios snacks.
+            Prepara café como nuestros baristas con estas recetas que puedes
+            probar en casa.
           </p>
-          <div class="recipes__videos">
-            <div class="recipes__card">
+
+          <ul class="recipes__cards">
+            <li class="recipes__card">
               <img
-                src="images/aeropress.jpg"
+                src="./images/receta-aeropress.webp"
                 alt="Receta en Aeropress"
                 class="recipes__image"
               />
-              <p class="recipes__text">
-                Receta en Aeropress<br /><small>~5 min</small>
-              </p>
-            </div>
-            <div class="recipes__card">
+              <div class="recipes__caption">
+                <span class="recipes__name">Receta en Aeropress</span>
+                <span class="recipes__duration">~5 min</span>
+              </div>
+            </li>
+            <li class="recipes__card">
               <img
-                src="images/frenchpress.jpg"
-                alt="Receta francesa"
+                src="./images/receta-cafetera-francesa.webp"
+                alt="Receta en cafetera francesa"
                 class="recipes__image"
               />
-              <p class="recipes__text">
-                Receta en cafetera francesa<br /><small>~15 min</small>
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+              <div class="recipes__caption">
+                <span class="recipes__name">Receta en cafetera francesa</span>
+                <span class="recipes__duration">~15 min</span>
+              </div>
+            </li>
+          </ul>
+        </section>
 
-      <section
-        id="reservation"
-        class="reservation"
-        style="background-image: url('images/background_reservation.svg')"
-      >
-        <div class="reservation__container">
+        <section class="reservation" id="reservation">
           <h2 class="reservation__title">Reservar una mesa</h2>
           <form class="reservation__form">
-            <label class="reservation__label"
-              >Nombre *
-              <input type="text" required class="reservation__input" />
+            <label class="reservation__label">
+              Nombre *
+              <input
+                type="text"
+                name="name"
+                class="reservation__input"
+                required
+              />
             </label>
-            <label class="reservation__label"
-              >Número de comensales *
-              <select required class="reservation__input">
+            <label class="reservation__label">
+              Número de comensales *
+              <select name="guests" class="reservation__input" required>
                 <option value="">1-8</option>
               </select>
             </label>
-            <label class="reservation__label"
-              >Fecha y hora *
-              <input type="date" required class="reservation__input" />
+            <label class="reservation__label">
+              Fecha y hora *
+              <input
+                type="date"
+                name="date"
+                class="reservation__input"
+                required
+              />
             </label>
-            <label class="reservation__label"
-              >Tu correo electrónico *
-              <input type="email" required class="reservation__input" />
+            <label class="reservation__label">
+              Tu correo electrónico *
+              <input
+                type="email"
+                name="email"
+                class="reservation__input"
+                required
+              />
             </label>
             <button type="submit" class="reservation__button">
-              <img
-                src="images/check.svg"
-                alt="Check"
-                class="reservation__icon"
-              />
               Reservar una mesa
             </button>
-            <label class="reservation__terms">
+            <label class="reservation__checkbox">
               <input type="checkbox" required />
               Acepto los términos de uso
             </label>
           </form>
-        </div>
-      </section>
-    </main>
+        </section>
+      </main>
 
-    <footer class="footer">
-      <div class="footer__container">
-        <img
-          src="images/logo_coffeeshop_light.svg"
-          alt="Logo claro"
-          class="footer__logo"
-        />
-        <p class="footer__copyright">© 2024 Tu nombre</p>
-        <div id="contact" class="footer__social">
-          <p class="footer__social-title">Redes sociales</p>
-          <ul class="footer__social-list">
+      <footer class="footer" id="footer">
+        <div class="footer__left">
+          <img
+            src="./images/logo_coffeeshop_light.svg"
+            alt="Logo Triple Expresso blanco"
+            class="footer__logo"
+          />
+          <p class="footer__copy">© 2024 Kevin Escobar</p>
+        </div>
+        <div class="footer__right">
+          <h3 class="footer__title">Redes sociales</h3>
+          <ul class="footer__socials">
             <li>
-              <a href="#"
-                ><img src="images/facebook_white.svg" alt="Facebook" width="20"
-              /></a>
+              <a href="#" class="footer__social-link">
+                <img
+                  src="./images/facebook_white.svg"
+                  alt="Facebook"
+                  class="footer__social-icon"
+                />
+                Facebook
+              </a>
             </li>
             <li>
-              <a href="#"
-                ><img
-                  src="images/instagram_white.svg"
+              <a href="#" class="footer__social-link">
+                <img
+                  src="./images/instagram_white.svg"
                   alt="Instagram"
-                  width="20"
-              /></a>
+                  class="footer__social-icon"
+                />
+                Instagram
+              </a>
             </li>
           </ul>
         </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>
