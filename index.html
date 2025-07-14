@@ -119,46 +119,43 @@
         <section class="reservation" id="reservation">
           <h2 class="reservation__title">Reservar una mesa</h2>
           <form class="reservation__form">
-            <label class="reservation__label">
-              Nombre *
-              <input
-                type="text"
-                name="name"
-                class="reservation__input"
-                required
-              />
-            </label>
-            <label class="reservation__label">
-              Número de comensales *
-              <select name="guests" class="reservation__input" required>
-                <option value="">1-8</option>
-              </select>
-            </label>
-            <label class="reservation__label">
-              Fecha y hora *
-              <input
-                type="date"
-                name="date"
-                class="reservation__input"
-                required
-              />
-            </label>
-            <label class="reservation__label">
-              Tu correo electrónico *
-              <input
-                type="email"
-                name="email"
-                class="reservation__input"
-                required
-              />
-            </label>
-            <button type="submit" class="reservation__button">
-              Reservar una mesa
-            </button>
-            <label class="reservation__checkbox">
-              <input type="checkbox" required />
-              Acepto los términos de uso
-            </label>
+            <fieldset class="form">
+              <label class="form__label">
+                Nombre *
+                <input type="text" name="name" class="form__input" required />
+              </label>
+
+              <label class="form__label">
+                Número de comensales *
+                <select name="guests" class="form__input" required>
+                  <option value="">1-8</option>
+                </select>
+              </label>
+
+              <label class="form__label">
+                Fecha y hora *
+                <input
+                  type="datetime-local"
+                  name="date"
+                  class="form__input"
+                  required
+                />
+              </label>
+
+              <label class="form__label">
+                Tu correo electrónico *
+                <input type="email" name="email" class="form__input" required />
+              </label>
+
+              <button type="submit" class="form__button">
+                Reservar una mesa
+              </button>
+
+              <label class="form__label form__label_type_checkbox">
+                <input type="checkbox" class="form__checkbox" required />
+                Acepto los términos de uso
+              </label>
+            </fieldset>
           </form>
         </section>
       </main>
