@@ -36,15 +36,6 @@
   display: block;
 }
 
-.span-accent {
-  font-family: "Noto Serif";
-  font-style: italic;
-  font-weight: normal;
-  font-size: 58px;
-  line-height: 72px;
-  color: #2f80ed;
-}
-
 .header__description {
   position: absolute;
   top: 291px;
@@ -86,13 +77,4 @@
   font-size: 14px;
   color: #838383;
   margin: 0;
-}
-
-.span-accent {
-  font-family: "Noto Serif", "Times New Roman", serif;
-  font-style: italic;
-  font-weight: normal;
-  font-size: 58px;
-  line-height: 72px;
-  color: #2f80ed;
 }
