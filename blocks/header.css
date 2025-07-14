@@ -21,26 +21,6 @@
   height: 39px;
 }
 
-.nav__links {
-  position: absolute;
-  top: 30px;
-  right: 80px;
-  display: flex;
-  gap: 20px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.nav__link {
-  text-decoration: none;
-  color: #000;
-  font-weight: 600;
-  font-family: "Inter", Arial, sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-}
-
 .header__title {
   position: absolute;
   top: 183px;
