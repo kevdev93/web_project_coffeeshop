@@ -32,19 +32,6 @@
   margin: 0;
 }
 
-.span-accent {
-  font-family: "Noto Serif";
-  font-style: italic;
-  font-weight: normal;
-  font-size: 58px;
-  line-height: 72px;
-  color: #2f80ed;
-}
-
-.header__title-span {
-  display: block;
-}
-
 .header__description {
   position: absolute;
   top: 291px;
